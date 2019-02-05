@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playercontrols : MonoBehaviour
 {
-	[SerializeField] float movementspeed = 1f;
+	[SerializeField] float movementspeed = 20f;
 	private Rigidbody rb;
 	float verticalAxis;
 	float horizontalAxis;
@@ -20,8 +20,8 @@ public class Playercontrols : MonoBehaviour
 	{
 		verticalAxis = Input.GetAxis("Vertical")*movementspeed;
 		horizontalAxis = Input.GetAxis("Horizontal")*movementspeed;
-		Debug.Log(verticalAxis);
-		Debug.Log(horizontalAxis);
+		//Debug.Log(verticalAxis);
+		//Debug.Log(horizontalAxis);
 
 
 		if (Input.GetButton("Horizontal"))

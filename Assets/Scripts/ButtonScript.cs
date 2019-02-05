@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
 {
+    //[SerializeField] GameObject FloatingTextPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,8 @@ public class ButtonScript : MonoBehaviour
 
 	public void PrintText()
 	{
-		Debug.Log("Wauw you pressed a button! Good job =)");
+        //Instantiate(FloatingTextPrefab, new Vector3(0, 0, 0), Quaternion.identity).SetActive(true);
+        Debug.Log("Wauw you pressed a button! Good job =)");
+        print("Wauw you pressed a button! Good job =)");
 	}
 }
